@@ -12,7 +12,7 @@ export function Footer() {
                     <Link href="mailto:hjj22@kaist.ac.kr" target="_blank" rel="noreferrer">
                         <Mail className="h-5 w-5 text-muted-foreground hover:text-foreground" />
                     </Link>
-                    <Link href="https://https://github.com/Jeong-jin-Han/" target="_blank" rel="noreferrer">
+                    <Link href="https://github.com/Jeong-jin-Han/" target="_blank" rel="noreferrer">
                         <Github className="h-5 w-5 text-muted-foreground hover:text-foreground" />
                     </Link>
                     <Link href="https://www.instagram.com/hjj_20.24/" target="_blank" rel="noreferrer">

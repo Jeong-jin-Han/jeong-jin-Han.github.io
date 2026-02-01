@@ -21,13 +21,13 @@ export default function AboutPage() {
                         <h2 className="text-2xl font-bold border-b pb-2">Research Interests</h2>
                         <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                             <li>
-                                <strong className="text-foreground">topic 1</strong>: Discription is here.
+                                <strong className="text-foreground">topic 1</strong>: description is here.
                             </li>
                             <li>
-                                <strong className="text-foreground">topic 2</strong>: Discription is here.
+                                <strong className="text-foreground">topic 2</strong>: description is here.
                             </li>
                             <li>
-                                <strong className="text-foreground">topic 3</strong>: Discription is here.
+                                <strong className="text-foreground">topic 3</strong>: description is here.
                             </li>
                         </ul>
                     </section>
@@ -40,15 +40,15 @@ export default function AboutPage() {
                                 <h3 className="text-lg font-semibold">Lab 1</h3>
                                 <p className="text-sm text-muted-foreground mb-2">Advisor: Prof. </p>
                                 <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
-                                    <li><strong className="text-foreground">Topic:</strong> Discription is here.</li>
-                                    <li><strong className="text-foreground">Details:</strong> Discription is here.</li>
+                                    <li><strong className="text-foreground">Topic:</strong> description is here.</li>
+                                    <li><strong className="text-foreground">Details:</strong> description is here.</li>
                                 </ul>
                             </div>
 
                             <div className="pt-2">
                                 <h3 className="text-lg font-semibold mb-2">Pre-University Research Projects</h3>
                                 <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
-                                    <li>Discription is here.</li>
+                                    <li>description is here.</li>
                                 </ul>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ export default function AboutPage() {
 
                     <section className="space-y-4">
                         <h2 className="text-2xl font-bold border-b pb-2">Personal Preferences</h2>
-                        <p className="text-muted-foreground">Discription is here.</p>
+                        <p className="text-muted-foreground">description is here.</p>
                         <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                             <li><strong className="text-foreground">Literature</strong>: </li>
                         </ul>
