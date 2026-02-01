@@ -1,0 +1,299 @@
+[
+  {
+    "type": "Post",
+    "title": "Welcome to My Blog",
+    "description": "An introduction to my blog where I share thoughts on AI, mathematics, and research.",
+    "tags": [
+      "Essay",
+      "Deep Learning"
+    ],
+    "url": "/blog/welcome-to-my-blog",
+    "date": "2026-02-02"
+  },
+  {
+    "type": "Post",
+    "title": "Why Nuclear Reactor Power Remains Essential Beyond Renewable Energy",
+    "description": "Examining why nuclear power is crucial for reliable, carbon-free baseload energy despite the growth of renewable sources.",
+    "tags": [
+      "Essay",
+      "Nuclear Reactor Design"
+    ],
+    "url": "/blog/nuclear-power-vs-renewables",
+    "date": "2026-02-01"
+  },
+  {
+    "type": "Post",
+    "title": "DreamerV3: Learning World Models for Reinforcement Learning",
+    "description": "Exploring DreamerV3, a state-of-the-art model-based reinforcement learning algorithm that learns to imagine and plan in latent space.",
+    "tags": [
+      "Deep Learning",
+      "Reinforcement Learning"
+    ],
+    "url": "/blog/dreamerv3-world-models",
+    "date": "2026-01-30"
+  },
+  {
+    "type": "Post",
+    "title": "Understanding Transformers: The Architecture Behind Modern AI",
+    "description": "A deep dive into the transformer architecture and why it revolutionized natural language processing and beyond.",
+    "tags": [
+      "Deep Learning",
+      "Machine Learning"
+    ],
+    "url": "/blog/understanding-transformers",
+    "date": "2026-01-28"
+  },
+  {
+    "type": "Post",
+    "title": "DeepSeek-V3: Mixture-of-Experts and N-gram Efficiency",
+    "description": "Analyzing DeepSeek-V3's architecture, focusing on its MoE design and the memory implications of n-gram prediction for improved efficiency.",
+    "tags": [
+      "Deep Learning",
+      "Large Language Models"
+    ],
+    "url": "/blog/deepseek-v3-architecture",
+    "date": "2026-01-27"
+  },
+  {
+    "type": "Post",
+    "title": "FPGA Basics and RTL Design Fundamentals",
+    "description": "An introduction to Field-Programmable Gate Arrays and Register Transfer Level design for hardware acceleration.",
+    "tags": [
+      "Hardware Architecture",
+      "Digital Design"
+    ],
+    "url": "/blog/fpga-basics-rtl-design",
+    "date": "2026-01-25"
+  },
+  {
+    "type": "Post",
+    "title": "FPGA Memory Architecture and Optimization",
+    "description": "Understanding memory hierarchies in FPGAs and techniques for optimizing memory access patterns for high-performance designs.",
+    "tags": [
+      "Hardware Architecture",
+      "Digital Design"
+    ],
+    "url": "/blog/fpga-memory-architecture",
+    "date": "2026-01-22"
+  },
+  {
+    "type": "Post",
+    "title": "Understanding Microscopic Cross Sections in Nuclear Physics",
+    "description": "An introduction to microscopic cross sections and their role in neutron interactions with atomic nuclei.",
+    "tags": [
+      "Nuclear Reactor Design",
+      "Physics"
+    ],
+    "url": "/blog/microscopic-cross-sections",
+    "date": "2026-01-20"
+  },
+  {
+    "type": "Post",
+    "title": "Macroscopic Cross Sections and Neutron Transport",
+    "description": "Exploring macroscopic cross sections and their application in neutron transport theory for nuclear reactor analysis.",
+    "tags": [
+      "Nuclear Reactor Design",
+      "Physics"
+    ],
+    "url": "/blog/macroscopic-cross-sections",
+    "date": "2026-01-18"
+  },
+  {
+    "type": "Post",
+    "title": "The Mathematics of Learning: Gradient Descent and Beyond",
+    "description": "Exploring the mathematical principles that enable machines to learn from data.",
+    "tags": [
+      "Machine Learning",
+      "Mathematics"
+    ],
+    "url": "/blog/mathematics-of-learning",
+    "date": "2026-01-15"
+  },
+  {
+    "type": "Post",
+    "title": "Book Review Template: How to Structure Your Thoughts",
+    "description": "A template and guide for writing thoughtful, structured book reviews.",
+    "tags": [
+      "Book Review"
+    ],
+    "url": "/blog/book-review-template",
+    "date": "2026-01-10"
+  },
+  {
+    "type": "Project",
+    "title": "jeong-jin-Han.github.io",
+    "description": "No description available.",
+    "tags": [],
+    "url": "https://github.com/Jeong-jin-Han/jeong-jin-Han.github.io",
+    "date": "2026-01-29T08:15:51Z"
+  },
+  {
+    "type": "Project",
+    "title": "F401_BRINGUP",
+    "description": "No description available.",
+    "tags": [
+      "C"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/F401_BRINGUP",
+    "date": "2026-01-08T02:33:32Z"
+  },
+  {
+    "type": "Project",
+    "title": "CS454_Project",
+    "description": "No description available.",
+    "tags": [
+      "Jupyter Notebook"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/CS454_Project",
+    "date": "2025-12-19T12:15:47Z"
+  },
+  {
+    "type": "Project",
+    "title": "welcome-to-docker_test2",
+    "description": "No description available.",
+    "tags": [
+      "JavaScript"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/welcome-to-docker_test2",
+    "date": "2025-07-13T00:39:03Z"
+  },
+  {
+    "type": "Project",
+    "title": "welcome-to-docker_test",
+    "description": "No description available.",
+    "tags": [
+      "JavaScript"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/welcome-to-docker_test",
+    "date": "2025-07-12T02:24:56Z"
+  },
+  {
+    "type": "Project",
+    "title": "my-fridge",
+    "description": "No description available.",
+    "tags": [
+      "Kotlin"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/my-fridge",
+    "date": "2025-07-10T02:46:24Z"
+  },
+  {
+    "type": "Project",
+    "title": "MadCamp-Proj1_ver2",
+    "description": "No description available.",
+    "tags": [
+      "Kotlin"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/MadCamp-Proj1_ver2",
+    "date": "2025-07-09T06:50:04Z"
+  },
+  {
+    "type": "Project",
+    "title": "MadCamp-Proj1",
+    "description": "No description available.",
+    "tags": [
+      "Kotlin"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/MadCamp-Proj1",
+    "date": "2025-07-09T06:49:42Z"
+  },
+  {
+    "type": "Project",
+    "title": "MyApplication",
+    "description": "No description available.",
+    "tags": [
+      "Kotlin"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/MyApplication",
+    "date": "2025-06-28T06:59:09Z"
+  },
+  {
+    "type": "Project",
+    "title": "cs377-Deep-Q-Network-AtariBreakoutGame",
+    "description": "No description available.",
+    "tags": [
+      "Python"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/cs377-Deep-Q-Network-AtariBreakoutGame",
+    "date": "2025-03-12T11:39:09Z"
+  },
+  {
+    "type": "Project",
+    "title": "cs377-deep-learning-from-scratch-4",
+    "description": "No description available.",
+    "tags": [
+      "Jupyter Notebook"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/cs377-deep-learning-from-scratch-4",
+    "date": "2025-03-04T05:33:51Z"
+  },
+  {
+    "type": "Project",
+    "title": "cs377-rl-from-scratch",
+    "description": "No description available.",
+    "tags": [
+      "Jupyter Notebook"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/cs377-rl-from-scratch",
+    "date": "2025-03-02T15:28:46Z"
+  },
+  {
+    "type": "Project",
+    "title": "cs377-Deep-reinforcement-learning-with-pytorch",
+    "description": "No description available.",
+    "tags": [
+      "Python"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/cs377-Deep-reinforcement-learning-with-pytorch",
+    "date": "2025-03-02T15:26:27Z"
+  },
+  {
+    "type": "Project",
+    "title": "my_first_svelte",
+    "description": "No description available.",
+    "tags": [
+      "Svelte"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/my_first_svelte",
+    "date": "2025-02-17T08:50:59Z"
+  },
+  {
+    "type": "Project",
+    "title": "NJOY",
+    "description": "No description available.",
+    "tags": [
+      "Fortran"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/NJOY",
+    "date": "2025-01-03T13:20:02Z"
+  },
+  {
+    "type": "Project",
+    "title": "CS100_Git",
+    "description": "No description available.",
+    "tags": [
+      "C"
+    ],
+    "url": "https://github.com/Jeong-jin-Han/CS100_Git",
+    "date": "2023-10-30T12:13:51Z"
+  },
+  {
+    "type": "Project",
+    "title": "testRepository",
+    "description": "No description available.",
+    "tags": [],
+    "url": "https://github.com/Jeong-jin-Han/testRepository",
+    "date": "2023-01-24T13:16:23Z"
+  },
+  {
+    "type": "Publication",
+    "title": "Example Publication Title",
+    "description": "Jeongjin Han, et al. - Conference/Journal Name, 2024. This is a brief abstract of the publication.",
+    "tags": [
+      "Machine Learning",
+      "AI"
+    ],
+    "url": "#",
+    "date": "2024"
+  }
+]
