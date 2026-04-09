@@ -37,11 +37,20 @@ export async function generateMetadata({ params }: TopicPageProps): Promise<Meta
     }
 }
 
+const STATIC_TOPIC_SLUGS = [
+    "computer-architecture",
+    "memory-systems",
+    "systems-programming",
+    "simulation-hpc",
+    "deep-learning",
+    "research-notes",
+    "essay",
+]
+
 export async function generateStaticParams() {
-    const topics = getAllTopics()
-    return topics.map((topic) => ({
-        slug: topic.slug,
-    }))
+    const dynamicSlugs = getAllTopics().map((t) => t.slug)
+    const allSlugs = Array.from(new Set([...STATIC_TOPIC_SLUGS, ...dynamicSlugs]))
+    return allSlugs.map((slug) => ({ slug }))
 }
 
 export default async function TopicPage({ params }: TopicPageProps) {
