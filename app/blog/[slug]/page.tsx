@@ -23,9 +23,10 @@ interface PageProps {
     }>
 }
 
+export const dynamicParams = false
+
 export async function generateStaticParams() {
     const posts = getPosts()
-    console.log("Generated Slugs:", posts.map(p => p.slug))
     return posts.map((post) => ({
         slug: post.slug,
     }))
