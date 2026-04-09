@@ -10,10 +10,12 @@ import {
 } from "@/components/ui/card"
 
 const topics = [
+    { name: "Computer Architecture", href: "/blog/topic/computer-architecture" },
+    { name: "Memory Systems", href: "/blog/topic/memory-systems" },
+    { name: "Systems Programming", href: "/blog/topic/systems-programming" },
+    { name: "Simulation & HPC", href: "/blog/topic/simulation-hpc" },
     { name: "Deep Learning", href: "/blog/topic/deep-learning" },
-    { name: "Hardware Architecture", href: "/blog/topic/hardware-architecture" },
-    { name: "Nuclear Reactor Design", href: "/blog/topic/nuclear-reactor-design" },
-    { name: "Book Review", href: "/blog/topic/book-review" },
+    { name: "Research Notes", href: "/blog/topic/research-notes" },
     { name: "Essay", href: "/blog/topic/essay" },
 ]
 

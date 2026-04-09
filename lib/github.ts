@@ -42,6 +42,8 @@ export async function getGithubRepos(): Promise<Project[]> {
                     ? "https://news-bias-analyzer-p5xpvp7wqjkjxc2cnv8qg2.streamlit.app"
                     : (repo.homepage || undefined),
             }))
+
+        // need to fix!!
     } catch (error) {
         console.error("Error fetching GitHub repos:", error)
         return []

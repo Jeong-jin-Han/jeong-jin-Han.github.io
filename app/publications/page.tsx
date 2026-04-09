@@ -9,71 +9,99 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { getPublications } from "@/lib/publications"
+import { getPublications, getReports, Publication } from "@/lib/publications"
 
 export const metadata: Metadata = {
-    title: "Publications | HJJ Blog",
-    description: "My research publications and academic works.",
+    title: "Papers & Reports | HJJ Blog",
+    description: "Research publications and technical reports.",
 }
 
 const publications = getPublications()
+const reports = getReports()
+
+function PubCard({ pub }: { pub: Publication }) {
+    return (
+        <Card>
+            <CardHeader className="pb-3">
+                <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1 min-w-0">
+                        <CardTitle className="text-lg leading-snug mb-3">{pub.title}</CardTitle>
+                        <p className="text-sm text-muted-foreground mb-1">{pub.authors}</p>
+                        <div className="flex items-center gap-2 flex-wrap">
+                            <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold ${
+                                pub.venue === "TBA"
+                                    ? "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400"
+                                    : pub.type === "report"
+                                    ? "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400"
+                                    : "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400"
+                            }`}>
+                                {pub.venue === "TBA" ? "⏳ TBA" : pub.venue}
+                            </span>
+                            <span className="text-xs text-muted-foreground">{pub.year}</span>
+                        </div>
+                    </div>
+                    {pub.url !== "#" && (
+                        <Button variant="outline" size="sm" asChild className="shrink-0">
+                            <Link href={pub.url} target="_blank">
+                                <ExternalLink className="h-4 w-4" />
+                            </Link>
+                        </Button>
+                    )}
+                </div>
+            </CardHeader>
+            <CardContent>
+                <p className="text-sm text-muted-foreground mb-4">{pub.abstract}</p>
+                <div className="flex flex-wrap gap-2">
+                    {pub.tags.map((tag) => (
+                        <span
+                            key={tag}
+                            className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                        >
+                            {tag}
+                        </span>
+                    ))}
+                </div>
+            </CardContent>
+        </Card>
+    )
+}
 
 export default function PublicationsPage() {
     return (
         <div className="container mx-auto py-12 md:py-24 lg:py-32">
-            <div className="mx-auto max-w-5xl space-y-8">
+            <div className="mx-auto max-w-5xl space-y-12">
                 <div className="space-y-2">
-                    <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">Publications</h1>
+                    <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">Papers &amp; Reports</h1>
                     <p className="text-xl text-muted-foreground">
-                        Research publications and academic works.
+                        Research publications and technical reports.
                     </p>
                 </div>
 
-                {publications.length === 0 ? (
-                    <div className="text-center py-12">
-                        <p className="text-muted-foreground">
-                            No publications yet. Check back soon!
-                        </p>
-                    </div>
-                ) : (
-                    <div className="space-y-6">
-                        {publications.map((pub, index) => (
-                            <Card key={index}>
-                                <CardHeader>
-                                    <div className="flex items-start justify-between gap-4">
-                                        <div className="flex-1">
-                                            <CardTitle className="text-xl mb-2">{pub.title}</CardTitle>
-                                            <div className="space-y-1 text-base text-muted-foreground">
-                                                <p className="font-medium">{pub.authors}</p>
-                                                <p className="italic">{pub.venue}, {pub.year}</p>
-                                            </div>
-                                        </div>
-                                        {pub.url !== "#" && (
-                                            <Button variant="outline" size="sm" asChild>
-                                                <Link href={pub.url} target="_blank">
-                                                    <ExternalLink className="h-4 w-4" />
-                                                </Link>
-                                            </Button>
-                                        )}
-                                    </div>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-muted-foreground mb-4">{pub.abstract}</p>
-                                    <div className="flex flex-wrap gap-2">
-                                        {pub.tags.map((tag) => (
-                                            <span
-                                                key={tag}
-                                                className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
-                                            >
-                                                {tag}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </CardContent>
-                            </Card>
-                        ))}
-                    </div>
-                )}
+                <section className="space-y-6">
+                    <h2 className="text-2xl font-bold border-b pb-2">Publications</h2>
+                    {publications.length === 0 ? (
+                        <p className="text-muted-foreground">No publications yet.</p>
+                    ) : (
+                        <div className="space-y-6">
+                            {publications.map((pub, index) => (
+                                <PubCard key={index} pub={pub} />
+                            ))}
+                        </div>
+                    )}
+                </section>
+
+                <section className="space-y-6">
+                    <h2 className="text-2xl font-bold border-b pb-2">Technical Reports</h2>
+                    {reports.length === 0 ? (
+                        <p className="text-muted-foreground">No reports yet.</p>
+                    ) : (
+                        <div className="space-y-6">
+                            {reports.map((pub, index) => (
+                                <PubCard key={index} pub={pub} />
+                            ))}
+                        </div>
+                    )}
+                </section>
             </div>
         </div>
     )

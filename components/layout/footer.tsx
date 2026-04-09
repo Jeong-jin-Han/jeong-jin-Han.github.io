@@ -6,7 +6,7 @@ export function Footer() {
         <footer className="border-t bg-background">
             <div className="container mx-auto flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
                 <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-                    Built by Jeongjin Han. Hosted on GitHub Pages.
+                    Hosted on GitHub Pages.
                 </p>
                 <div className="flex items-center gap-4">
                     <Link href="mailto:hjj22@kaist.ac.kr" target="_blank" rel="noreferrer">

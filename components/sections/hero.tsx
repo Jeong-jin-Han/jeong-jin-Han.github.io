@@ -58,9 +58,9 @@ export function Hero({ align = "center" }: HeroProps) {
                         align === "center" && "mx-auto"
                     )}
                 >
-                    <span className="font-bold block mb-2">Senior Undergraduate Student @ KAIST, School of Computing</span>
-                    {/* Exploring the mathematical foundations of Generative AI & General Intelligence */}
-                    Exploring mathematically grounded design of domain-specific architectures for intelligent workloads
+                    <span className="font-bold block mb-2">Senior Undergraduate @ KAIST, School of Computing &amp; Nuclear and Quantum Engineering</span>
+                    Interested in computer architecture, systems software, and hardware–software co-design.
+                    Passionate about memory-centric systems, large-scale simulation, and system state management.
                 </motion.p>
             </div>
             <motion.div
