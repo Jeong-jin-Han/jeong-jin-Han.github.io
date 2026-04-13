@@ -60,7 +60,7 @@ export function Hero({ align = "center" }: HeroProps) {
                 >
                     <span className="font-bold block mb-2">Senior Undergraduate @ KAIST, School of Computing &amp; Nuclear and Quantum Engineering</span>
                     Interested in computer architecture, systems software, and hardware–software co-design.
-                    Passionate about memory-centric systems, large-scale simulation, and system state management.
+                    Exploring memory hierarchy design, CXL-based disaggregated memory, and distributed ML state management.
                 </motion.p>
             </div>
             <motion.div

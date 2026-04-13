@@ -13,10 +13,10 @@ export const publications: Publication[] = [
     {
         title: "SHIFT: Sigmoid-Based Heuristic Invertible Fitness-Landscape Transformation",
         authors: "Jeongjin Han, Seunghoon Sim, Jian Lee, Seongyoon Park",
-        venue: "TBA",
+        venue: "arXiv preprint",
         year: "2025",
         abstract: "A sigmoid-based invertible fitness-landscape transformation for search-based software testing (SBST), enabling hill climbing to escape plateaus. Applies compiler techniques (AST-based instrumentation, constant folding, SSA-like variable-shading) to Python source transformation, with parallel time-budgeted evaluation infrastructure.",
-        url: "/shift.pdf",
+        url: "https://arxiv.org/abs/2604.09171",
         tags: ["SBST", "Search-Based Testing", "Compiler Techniques", "Hill Climbing"],
         type: "publication",
     },

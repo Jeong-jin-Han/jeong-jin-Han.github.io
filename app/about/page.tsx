@@ -22,15 +22,37 @@ export default function AboutPage() {
                         <h2 className="text-2xl font-bold border-b pb-2">Research Interests</h2>
                         <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                             <li>
-                                <strong className="text-foreground">Memory-Centric Systems</strong>: data movement optimization and memory hierarchy design in modern computing systems.
+                                <strong className="text-foreground">Memory Hierarchy &amp; RTL-Level Design</strong>: architectural exploration of memory hierarchy design with interest in RTL-level hardware component development.
                             </li>
                             <li>
-                                <strong className="text-foreground">Large-Scale Simulation &amp; Parallelism</strong>: performance optimization and scalability analysis of compute-intensive simulation workloads.
+                                <strong className="text-foreground">CXL-Based Disaggregated Memory</strong>: interest in memory-pressure-driven smart routing in CXL-based disaggregated memory systems and hardware/software co-design.
                             </li>
                             <li>
-                                <strong className="text-foreground">System State Management</strong>: consistent snapshot, checkpointing, and deterministic execution in distributed and simulation environments.
+                                <strong className="text-foreground">Distributed ML State Management</strong>: seamless resumption of distributed ML training through consistent multi-process state capture (RNG, optimizer, data loader state).
                             </li>
                         </ul>
+                    </section>
+
+                    <section className="space-y-4">
+                        <h2 className="text-2xl font-bold border-b pb-2">Preprints</h2>
+                        <div className="space-y-4">
+                            <div>
+                                <div className="flex items-baseline justify-between">
+                                    <h3 className="text-lg font-semibold">SHIFT: Sigmoid-Based Heuristic Invertible Fitness-Landscape Transformation</h3>
+                                    <span className="text-sm text-muted-foreground">2025</span>
+                                </div>
+                                <p className="text-sm text-muted-foreground mb-1">Jeongjin Han, Seunghoon Sim, Jian Lee, Seongyoon Park &mdash; <strong className="text-foreground">First author</strong></p>
+                                <p className="text-sm text-muted-foreground"><a href="https://arxiv.org/abs/2604.09171" className="underline hover:text-foreground" target="_blank">arXiv:2604.09171</a></p>
+                            </div>
+                            <div>
+                                <div className="flex items-baseline justify-between">
+                                    <h3 className="text-lg font-semibold">VRAIL: Vectorized Reward-based Attribution for Interpretable Learning</h3>
+                                    <span className="text-sm text-muted-foreground">2025</span>
+                                </div>
+                                <p className="text-sm text-muted-foreground mb-1">Co-author (equal contribution)</p>
+                                <p className="text-sm text-muted-foreground"><a href="https://arxiv.org/abs/2506.16014" className="underline hover:text-foreground" target="_blank">arXiv:2506.16014</a></p>
+                            </div>
+                        </div>
                     </section>
 
                     <section className="space-y-4">
@@ -44,10 +66,10 @@ export default function AboutPage() {
                                 </div>
                                 <p className="text-sm text-muted-foreground mb-2">Undergraduate Researcher &mdash; Advisor: Prof. Jonghyun Kim</p>
                                 <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
-                                    <li>Identified GPU underutilization bottleneck caused by a CPU-bound simulator; redesigned the training pipeline to decouple policy optimization from environment interaction, improving hardware utilization under system resource constraints.</li>
-                                    <li>Reverse-engineered the process memory layout of a closed-source Windows VM simulator to extract and inject runtime state variables, enabling system integration without source access or binary modification.</li>
-                                    <li>Designed and implemented a TCP/Docker-based distributed execution infrastructure bridging a Windows VM and a GPU server, managing cross-system state synchronization and execution control.</li>
-                                    <li>Enabled efficient training of RL agents under system-level constraints including memory bandwidth and execution latency bottlenecks.</li>
+                                    <li>Identified <strong className="text-foreground">system-level bottlenecks</strong> under memory and bandwidth constraints across heterogeneous CPU–GPU pipelines.</li>
+                                    <li>Led pipeline redesign to resolve a <strong className="text-foreground">GPU underutilization bottleneck</strong> caused by a CPU-bound simulator; decoupled policy optimization from environment interaction, improving <strong className="text-foreground">hardware utilization</strong>.</li>
+                                    <li>Reverse-engineered the <strong className="text-foreground">process memory layout</strong> of a closed-source Windows VM simulator to extract and inject runtime state variables, enabling system integration without source access or binary modification.</li>
+                                    <li>Designed and implemented a TCP/Docker-based distributed execution infrastructure bridging a Windows VM and a GPU server, managing cross-system state synchronization under <strong className="text-foreground">memory bandwidth and latency</strong> constraints.</li>
                                 </ul>
                             </div>
 
@@ -71,7 +93,7 @@ export default function AboutPage() {
                             <div>
                                 <p className="text-sm font-semibold mb-2">Languages</p>
                                 <div className="flex flex-wrap gap-2">
-                                    {["C++", "Rust", "Python", "MATLAB", "Scala"].map((tech) => (
+                                    {["C++", "Rust", "Python", "MATLAB", "Scala", "Verilog"].map((tech) => (
                                         <span key={tech} className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium">
                                             {tech}
                                         </span>
